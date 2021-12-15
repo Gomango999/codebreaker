@@ -1,0 +1,38 @@
+[
+    {
+        "long_name": "Robot 1",
+        "short_name": "a-robots-1",
+        "task_code": "robot/1.cpp",
+        "sanity_exe": "robot/sanity",
+        "broken_exe": "robot/1.cpp",
+        "correct_exe": "robot/correct.cpp",
+        "checker_exe": "match_file"
+    },
+    {
+        "long_name": "Robot 2",
+        "short_name": "a-robots-2",
+        "task_code": "robot/2.cpp",
+        "sanity_exe": "robot/sanity",
+        "broken_exe": "robot/2.cpp",
+        "correct_exe": "robot/correct.cpp",
+        "checker_exe": "match_file"
+    },
+    {
+        "long_name": "Robot 3",
+        "short_name": "a-robots-3",
+        "task_code": "robot/3.cpp",
+        "sanity_exe": "robot/sanity",
+        "broken_exe": "robot/3.cpp",
+        "correct_exe": "robot/correct.cpp",
+        "checker_exe": "match_file"
+    },
+    {
+        "long_name": "Robot 4",
+        "short_name": "a-robots-4",
+        "task_code": "robot/4.cpp",
+        "sanity_exe": "robot/sanity",
+        "broken_exe": "robot/4.cpp",
+        "correct_exe": "robot/correct.cpp",
+        "checker_exe": "match_file"
+    }
+]
