@@ -52,7 +52,7 @@ async def get_token_cookie(username, password):
             'display_name': user['username'],
             'exp': datetime.datetime.utcnow() + datetime.timedelta(hours = 72)
         }
-        return jwt.encode(datablob, TOKEN_SECRET, algorithm = 'HS256').decode('utf-8')
+        return jwt.encode(datablob, TOKEN_SECRET, algorithm = 'HS256')
 
 async def page_login_post(request):
     req = await request.post()
@@ -71,7 +71,7 @@ def require_login_decorate(function, admin = False):
     async def replacement(request):
         token = request.cookies.get('login-token')
         if token != None:
-            decoded = jwt.decode(token, TOKEN_SECRET, algorithm = 'HS256')
+            decoded = jwt.decode(token, TOKEN_SECRET, algorithms = 'HS256')
             if decoded:
                 if not admin or decoded.get('admin'):
                     username = decoded['user']
@@ -274,4 +274,4 @@ if __name__ == '__main__':
     task = loop.create_task(get_settings())
     loop.run_until_complete(task)
     p = os.getenv('PORT')
-    aiohttp.web.run_app(app, host = '0.0.0.0', port = int(p) if p else 3000, )
+    aiohttp.web.run_app(app, host = '0.0.0.0', port = int(p) if p else 3000, loop = loop)
