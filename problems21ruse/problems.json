@@ -38,28 +38,28 @@
     {
         "long_name": "Ghost 1",
         "short_name": "c-ghosts-1",
-        "task_code": "ghosts/1.cpp",
-        "sanity_exe": "ghosts/sanity",
-        "broken_exe": "ghosts/1.cpp",
-        "correct_exe": "ghosts/correct.cpp",
+        "task_code": "ghost/1.cpp",
+        "sanity_exe": "ghost/sanity",
+        "broken_exe": "ghost/1.cpp",
+        "correct_exe": "ghost/correct.cpp",
         "checker_exe": "match_file"
     },
     {
         "long_name": "Ghost 2",
         "short_name": "c-ghosts-2",
-        "task_code": "ghosts/2.cpp",
-        "sanity_exe": "ghosts/sanity",
-        "broken_exe": "ghosts/2.cpp",
-        "correct_exe": "ghosts/correct.cpp",
+        "task_code": "ghost/2.cpp",
+        "sanity_exe": "ghost/sanity",
+        "broken_exe": "ghost/2.cpp",
+        "correct_exe": "ghost/correct.cpp",
         "checker_exe": "match_file"
     },
     {
         "long_name": "Ghost 3",
         "short_name": "c-ghosts-3",
-        "task_code": "ghosts/3.cpp",
-        "sanity_exe": "ghosts/sanity",
-        "broken_exe": "ghosts/3.cpp",
-        "correct_exe": "ghosts/correct.cpp",
+        "task_code": "ghost/3.cpp",
+        "sanity_exe": "ghost/sanity",
+        "broken_exe": "ghost/3.cpp",
+        "correct_exe": "ghost/correct.cpp",
         "checker_exe": "match_file"
     }
 ]
