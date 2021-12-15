@@ -43,11 +43,11 @@ int main () {
     // initialise K variable to 0.
     int K = 0;
     // scan in K as an integer. K will store the number of moves that the robot will make, and is given by the first line of input.
-    scanf("%c", K);
+    scanf("%c", &K);
     // initialise the array to be large enough to hold even the maximum number of K. This is given by the bounds, which dictate K <= 100,000.
     char s[100000];
     // initialise this array to all question marks, since we don't know what the directions are until we scan them in.
-    for (int i = 0; i < 1000000; i++) s[i] = '?';
+    for (int i = 0; i < 100000; i++) s[i] = '?';
     // scan in the string of directions.
     // These are directions given as the characters NSEW, denoting North, South, East and West respectively.
     scanf("%s", s);
