@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-# Sanity for Robot
+# Sanity for Art
 import sys
 
 def fail():

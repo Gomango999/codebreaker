@@ -50,9 +50,9 @@ Finally a language that lets me send coloured code over messenger!
     🆗;
 🌛
 
-#include <bits/stdc++.h>
-int main(){
-    double α = 2.; // alpha, ok!
-    double ∞ = 99999.; // infinity, error
-}
-
+// #include <bits/stdc++.h>
+// int main(){
+//     double α = 2.; // alpha, ok!
+//     double ∞ = 99999.; // infinity, error
+// }
+//
