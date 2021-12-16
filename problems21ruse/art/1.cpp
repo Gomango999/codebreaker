@@ -14,7 +14,7 @@ int main () {
     int N;
     cin >> N;
     int x, y;
-    int top = 1, bottom = 999, left=1, right =  999;
+    int top = 1, bottom = 9999, left=1, right = 9999;
     for (int i = 0; i < N; i++) {
         cin >> y >> x;
         top = max(top, x);
@@ -22,5 +22,5 @@ int main () {
         left = max(left, y);
         right = min(right, x);
     }
-    cout << (right - top) * (left - bottom) << '\n';
+    cout << (right - top) * (bottom - left) << '\n';
 }

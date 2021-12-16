@@ -18,13 +18,9 @@ MAX_Y = 1e4;
 
 N = int(input())
 ensure(N, MIN_N, MAX_N)
-for i in range(n):
+for i in range(N):
     x, y = list(map(int, input().split()))
     ensure(x, MIN_X, MAX_X)
     ensure(y, MIN_Y, MAX_Y)
-
-for c in s:
-    if c not in "NESW":
-        fail()
 
 print(1)
