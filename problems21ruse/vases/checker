@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+import sys
+import os
+
+studentOut, judgeOut, judgeIn = [open(x) for x in sys.argv[1:4]]
+
+# Be nice to students and strip empty lines.
+# For this one, assume that there is only one line in all inputs and outputs
+studentOut = list(filter(lambda x : x != "", studentOut.readlines()))[0]
+judgeIn = list(filter(lambda x : x != "", judgeIn.readlines()))[0]
+
+vases = list(map(int, studentOut.split()))
+studentN = sum(vases)
+
+# must be 3 vases
+if len(vases) != 3:
+    print(0)
+    exit(0)
+
+# check impossible case handled correctly
+if int(judgeIn) < 6:
+    if vases[0] == 0 and vases[1] == 0 and vases[2] == 0:
+        print(100)
+        exit(0)
+    else:
+        print(0)
+        exit(0)
+
+
+# must have the same number of flowers
+# print(studentN)
+if studentN != int(judgeIn):
+    print(0)
+    exit(0)
+
+# no empty vases
+for i in vases:
+    if i == 0:
+        print(0)
+        exit(0)
+
+# no two vases can have the same number
+if vases[0] == vases[1] or vases[1] == vases[2] or vases[0] == vases[2]:
+    print(0)
+    exit(0)
+
+
+print(100)

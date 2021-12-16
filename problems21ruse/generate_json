@@ -41,8 +41,8 @@ problems = []
 problems.extend(problem_gen("Robot ", "a-robots-", "robot", False, 4))
 problems.extend(problem_gen("Art ", "b-art-", "art", False, 2))
 problems.extend(problem_gen("Ghost ", "c-ghosts-", "ghost", False, 3))
-# problems.extend(problem_gen("Addition ", "d-addition-", "addition", False, 2))
-# problems.extend(problem_gen("Vases ", "e-vases-", "vases", False, 2))
+problems.extend(problem_gen("Addition ", "d-addition-", "addition", False, 2))
+problems.extend(problem_gen("Vases ", "e-vases-", "vases", True, 2))
 
 with open('problems.json', 'w') as f:
     f.write(json.dumps(problems, indent=4))

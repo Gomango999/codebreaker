@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-# Sanity for Addition
+# Sanity for Vases
 import sys
 
 def fail():
@@ -10,10 +10,9 @@ def ensure(x, mn, mx):
     if x < mn or x > mx: fail()
 
 MIN_N = 0;
-MAX_N = 1e9;
+MAX_N = 1e5;
 
-a, b = list(map(int, input().split()))
-ensure(a, MIN_N, MAX_N)
-ensure(b, MIN_N, MAX_N)
+N = int(input())
+ensure(N, MIN_N, MAX_N)
 
 print(1)

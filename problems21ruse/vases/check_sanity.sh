@@ -24,7 +24,7 @@ do
     out="${i::${#i}-2}out"
     echo "checking output of $i and $out"
     echo -en "\033[0;31m"
-    diff -w <(./correct.exe < $i) $out
+    diff -w <(./checker <(./correct.exe < $i) $out $i) <(echo 100)
     echo -en "\033[0m"
 done
 
@@ -33,7 +33,7 @@ do
     out="${i::${#i}-2}out"
     echo "checking output of $i and $out"
     echo -en "\033[0;31m"
-    diff -w <(./correct.exe < $i) $out
+    diff -w <(./checker <(./correct.exe < $i) $out $i) <(echo 100)
     echo -en "\033[0m"
 done
 
@@ -48,7 +48,8 @@ do
         for j in $(find "sample" -name *.in | sort)
         do
             out="${j::${#j}-2}out"
-            if [ "$(diff -bq <($i < $j) $out)" == "" ]; then
+            DIFF=$(diff -bq <(./checker <($i < $j) $out $j) <(echo 100))
+            if [ "$DIFF" == "" ]; then
                 echo "    $j - passed"
             else
                 echo -en "\033[0;33m"
@@ -59,7 +60,8 @@ do
 
         in="breaking/${i::${#i}-3}in"
         out="breaking/${i::${#i}-3}out"
-        if [ "$$(diff -bq <($i < $in) $out)" == "" ]; then
+        DIFF=$(diff -bq <(./checker <($i < $in) $out $in) <(echo 100))
+        if [ "$DIFF" == "" ]; then
             echo -en "\033[0;31m"
             echo "    $in - passed"
             echo -en "\033[0m"

@@ -61,6 +61,6 @@ int main() {
         cout << "0 0 0";
         return 0;
     }
-    cout << "1 2 " << N - 3;
+    cout << "1 2 " << N - 3 << endl;
     return 0;
 }

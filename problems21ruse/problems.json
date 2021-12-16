@@ -79,5 +79,41 @@
         "broken_exe": "ghost/3.cpp",
         "correct_exe": "ghost/correct.cpp",
         "checker_exe": "match_file"
+    },
+    {
+        "long_name": "Addition 1",
+        "short_name": "d-addition-1",
+        "task_code": "addition/1.cpp",
+        "sanity_exe": "addition/sanity",
+        "broken_exe": "addition/1.cpp",
+        "correct_exe": "addition/correct.cpp",
+        "checker_exe": "match_file"
+    },
+    {
+        "long_name": "Addition 2",
+        "short_name": "d-addition-2",
+        "task_code": "addition/2.cpp",
+        "sanity_exe": "addition/sanity",
+        "broken_exe": "addition/2.cpp",
+        "correct_exe": "addition/correct.cpp",
+        "checker_exe": "match_file"
+    },
+    {
+        "long_name": "Vases 1",
+        "short_name": "e-vases-1",
+        "task_code": "vases/1.cpp",
+        "sanity_exe": "vases/sanity",
+        "broken_exe": "vases/1.cpp",
+        "correct_exe": "vases/correct.cpp",
+        "checker_exe": "vases/checker"
+    },
+    {
+        "long_name": "Vases 2",
+        "short_name": "e-vases-2",
+        "task_code": "vases/2.cpp",
+        "sanity_exe": "vases/sanity",
+        "broken_exe": "vases/2.cpp",
+        "correct_exe": "vases/correct.cpp",
+        "checker_exe": "vases/checker"
     }
 ]
