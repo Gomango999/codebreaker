@@ -52,7 +52,7 @@ int main () {
     // These are directions given as the characters NSEW, denoting North, South, East and West respectively.
     scanf("%s", s);
     // loop through each element of the string and update our position.
-    int x, y;
+    int x = 0, y = 0;
     for (int i = 0; i < K; i++) {
         // If we go north, update the y position to be itself + 1.
         if (s[i] == 'N') x = x+1;

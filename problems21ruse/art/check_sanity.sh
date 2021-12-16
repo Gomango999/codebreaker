@@ -59,7 +59,7 @@ do
 
         in="breaking/${i::${#i}-3}in"
         out="breaking/${i::${#i}-3}out"
-        if [ "$$(diff -bq <($i < $in) $out)" == "" ]; then
+        if [ "$(diff -bq <($i < $in) $out)" == "" ]; then
             echo -en "\033[0;31m"
             echo "    $in - passed"
             echo -en "\033[0m"
