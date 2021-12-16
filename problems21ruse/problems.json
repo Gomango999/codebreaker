@@ -1,6 +1,6 @@
 [
     {
-        "long_name": "Robot 1",
+        "long_name": "Robot Vacuum 1",
         "short_name": "a-robots-1",
         "task_code": "robot/1.cpp",
         "sanity_exe": "robot/sanity",
@@ -9,7 +9,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Robot 2",
+        "long_name": "Robot Vacuum 2",
         "short_name": "a-robots-2",
         "task_code": "robot/2.cpp",
         "sanity_exe": "robot/sanity",
@@ -18,7 +18,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Robot 3",
+        "long_name": "Robot Vacuum 3",
         "short_name": "a-robots-3",
         "task_code": "robot/3.cpp",
         "sanity_exe": "robot/sanity",
@@ -27,7 +27,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Robot 4",
+        "long_name": "Robot Vacuum 4",
         "short_name": "a-robots-4",
         "task_code": "robot/4.cpp",
         "sanity_exe": "robot/sanity",
@@ -36,7 +36,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Art 1",
+        "long_name": "Art Class II 1",
         "short_name": "b-art-1",
         "task_code": "art/1.cpp",
         "sanity_exe": "art/sanity",
@@ -45,7 +45,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Art 2",
+        "long_name": "Art Class II 2",
         "short_name": "b-art-2",
         "task_code": "art/2.cpp",
         "sanity_exe": "art/sanity",
@@ -54,7 +54,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Ghost 1",
+        "long_name": "Ghost Encounters 1",
         "short_name": "c-ghosts-1",
         "task_code": "ghost/1.cpp",
         "sanity_exe": "ghost/sanity",
@@ -63,7 +63,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Ghost 2",
+        "long_name": "Ghost Encounters 2",
         "short_name": "c-ghosts-2",
         "task_code": "ghost/2.cpp",
         "sanity_exe": "ghost/sanity",
@@ -72,7 +72,7 @@
         "checker_exe": "match_file"
     },
     {
-        "long_name": "Ghost 3",
+        "long_name": "Ghost Encounters 3",
         "short_name": "c-ghosts-3",
         "task_code": "ghost/3.cpp",
         "sanity_exe": "ghost/sanity",
